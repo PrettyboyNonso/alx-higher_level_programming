@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-for i in range(0, 10):
-    for j in range(0, 10):
-        if (i, j) != (9, 9):
-            print("{}{}".format(i, j), end=", ")
-        elif (i, j) == (9, 9):
-            print("{}{}\n".format(i, j))
+for i in range(0, 100):
+    if i < 10:
+        print("{}{}".format(0, i), end=", ")
+    else:
+        print("{}".format(i), end=", " if i < 99 else "\n")
